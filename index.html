@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html assignment</title>
+    <!--basicly the template. adds the background color, font size, padding and where the text is, to all the corresponding tags-->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      header {
+        background-color: rgb(58, 53, 59);
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+
+      nav {
+        float: left;
+        width: 30%;
+        height: 650px;
+        background: rgb(163, 162, 162);
+        padding: 20px;
+      }
+
+      main {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #ffffff;
+        height: 300px;
+      }
+
+      section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      footer {
+        background-color: rgb(58, 53, 59);
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      @media (max-width: 600px) {
+        nav,
+        article {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+
+    <!--End of the template-->
+  </head>
+  <body>
+    <header>
+      My Marvel Website
+      <a href="index.html"
+        ><img
+          src="cool-pineapple/cool pineapple.png"
+          alt="cool pineapple"
+          width="50"
+          height="50"
+          class="right"
+      /></a>
+    </header>
+    <section>
+      <!--
+          this is the nav tag it moves all things inside of it to the 
+      
+          left side of the screen to make it easyier for users to navigate
+
+          the websites
+      -->
+      <nav>
+        <h2>Navigation</h2>
+        <a href="toughtsonmarvel.html">click here to enter your thoughts</a>
+        <br />
+        <a href="capandironman.html">Team Cap And Team Iron Man</a>
+        <br />
+        <br />
+        <br />
+        <h1>Avengers theme with a Kazoo (10 hours)</h1>
+        <br />
+        <iframe
+          width="300"
+          height="250"
+          src="https://www.youtube.com/embed/8aQEJRq2GYY"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </nav>
+      <!--
+          article tag moves everything to the right side of the screen and to make it easy to read Example: news and storys
+      -->
+
+      <!--
+      Name:Brady Genik
+       Course: Software Development 20S
+       School: (PTEC)
+       Date Last Modified:10/12/2022
+      -->
+      <main>
+        <!--
+         adds a line around the form (but when you but a legend tag in there it will leave a space open for text)
+        -->
+        <h1>Developers favorite character</h1>
+        <p>my favorite character is DareDevil</p>
+        <img src="photos/daredevil1.jpg" alt="img" height="500" width="250" />
+        <div style="display: inline-block; vertical-align: top">
+          <img src="photos/Daredevil.jpg" alt="img" height="250" width="250" />
+          <br />
+          <img src="photos/Daredevil.png" alt="img" height="246" width="250" />
+        </div>
+        <div style="display: inline-block">
+          <p>"Blinded as a boy, Matt Murdock used his sonar-strong</p>
+          <p>hearing to aid him in his martial arts training,</p>
+          <p>becoming a fight-for-the-underdog defense attorney</p>
+          <p>
+            by day and a masked vigilante called Daredevil by night." -<a
+              href="https://www.marvel.com/characters/daredevil-matthew-murdock"
+              >marvel.com</a
+            >
+          </p>
+
+          <br />
+          <p>
+            DareDevil's first apperance was in April 1964 with Daredevil no. 1
+          </p>
+          <br />
+          <p>
+            DareDevil has had five diffrent suits (not including alternative
+            realitys)
+          </p>
+          <p>
+            "The Prototype", "Red and Yellow", "Red Suit", "Armored Suit",
+            "Shadowland Suit"
+          </p>
+          <br />
+          <p>
+            DareDevil is a part of the deffenders a group of street level heros
+          </p>
+          <br />
+          <p>DareDevil made his MCU debut in Spiderman Now Way Home</p>
+        </div>
+      </main>
+    </section>
+    <!--
+     moves all objects in the footer tag to the bottom of the web page
+    -->
+    <footer>
+      <p>
+        this is a website created for my software dev class. this website is
+        about marvel to talk
+      </p>
+      <h2>&copy; Brady</h2>
+    </footer>
+  </body>
+</html>

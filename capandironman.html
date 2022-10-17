@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html assignment</title>
+    <!--basicly the template. adds the background color, font size, padding and where the text is, to all the corresponding tags-->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      header {
+        background-color: rgb(58, 53, 59);
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+
+      nav {
+        float: left;
+        width: 30%;
+        height: 650px;
+        background: rgb(163, 162, 162);
+        padding: 20px;
+      }
+
+      main {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #ffffff;
+        height: 300px;
+      }
+
+      section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      footer {
+        background-color: rgb(58, 53, 59);
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      @media (max-width: 600px) {
+        nav,
+        article {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+
+    <!--End of the template-->
+  </head>
+  <body>
+    <header>
+      Team Cap And Team Iron Man
+      <a href="index.html"
+        ><img
+          src="cool-pineapple/cool pineapple.png"
+          alt="cool pineapple"
+          width="50"
+          height="50"
+          class="right"
+      /></a>
+    </header>
+    <section>
+      <!--
+          this is the nav tag it moves all things inside of it to the 
+      
+          left side of the screen to make it easyier for users to navigate
+
+          the websites
+      -->
+      <nav>
+        <h2>Navigation</h2>
+        <a href="toughtsonmarvel.html">click here to enter your thoughts</a>
+        <br />
+        <a href="index.html">return home</a>
+        <br />
+        <br />
+        <br />
+        <h1>Avengers theme with a Kazoo (10 hours)</h1>
+        <br />
+        <iframe
+          width="300"
+          height="250"
+          src="https://www.youtube.com/embed/8aQEJRq2GYY"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </nav>
+      <!--
+          article tag moves everything to the right side of the screen and to make it easy to read Example: news and storys
+      -->
+      <!--
+      Name:Brady Genik
+       Course: Software Development 20S
+       School: (PTEC)
+       Date Last Modified:10/12/2022
+      -->
+      <main>
+        <table>
+          <tr>
+            <th>Team Cap</th>
+            <br />
+
+            <br />
+            <th>Team Ironman</th>
+          </tr>
+          <tr>
+            <td>Bucky</td>
+            <td>Black Panther</td>
+          </tr>
+
+          <tr>
+            <td>Falcon</td>
+            <td>Vision</td>
+          </tr>
+          <tr>
+            <td>Scarlett Witch</td>
+            <td>Black Widow</td>
+          </tr>
+          <tr>
+            <td>Hawkeye</td>
+            <td>War Machine</td>
+          </tr>
+          <tr>
+            <td>Ant-Man</td>
+            <td>Spiderman</td>
+          </tr>
+        </table>
+        <p>these are the character that are on team ironman and team cap</p>
+      </main>
+    </section>
+    <!--
+     moves all objects in the footer tag to the bottom of the web page
+    -->
+    <footer>
+      <p>
+        this is a website created for my software dev class. this website is
+        about marvel to talk about my favorite character and your opinions on
+        marvel
+      </p>
+      <h2>&copy; Brady</h2>
+    </footer>
+  </body>
+</html>

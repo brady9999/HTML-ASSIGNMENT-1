@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html assignment</title>
+    <!--basicly the template. adds the background color, font size, padding and where the text is, to all the corresponding tags-->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      header {
+        background-color: rgb(58, 53, 59);
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+
+      nav {
+        float: left;
+        width: 30%;
+        height: 650px;
+        background: rgb(163, 162, 162);
+        padding: 20px;
+      }
+
+      main {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #ffffff;
+        height: 300px;
+      }
+
+      section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      footer {
+        background-color: rgb(58, 53, 59);
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      @media (max-width: 600px) {
+        nav,
+        article {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+
+    <!--End of the template-->
+  </head>
+  <body>
+    <header>
+      Marvel Thoughts
+      <a href="index.html">
+        <img
+          src="cool-pineapple/cool pineapple.png"
+          alt="cool pineapple"
+          width="50"
+          height="50"
+          class="right"
+        />
+      </a>
+    </header>
+
+    <section>
+      <!--
+          this is the nav tag it moves all things inside of it to the 
+      
+          left side of the screen to make it easyier for users to navigate
+
+          the websites
+      -->
+      <nav>
+        <h2>Navigation</h2>
+        <a href="index.html">click here to return to main page</a>
+        <br />
+        <a href="capandironman.html">Team Cap And Team Iron Man</a>
+        <br />
+        <form name="marvel-select-form" id="marvel-select-form" method="get">
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <h1>Avengers theme with a Kazoo (10 hours)</h1>
+          <br />
+          <iframe
+            width="300"
+            height="250"
+            src="https://www.youtube.com/embed/8aQEJRq2GYY"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </form>
+      </nav>
+      <!--
+          article tag moves everything to the right side of the screen and to make it easy to read Example: news and storys
+      -->
+      <main>
+        <!--
+         fieldset adds a line around the form (but when you but a legend tag in there it will leave a space open for text)
+        -->
+        <fieldset>
+          <legend style="font-family: Georgia, serif">
+            Choose A Character And Tell Me Why You Picked That Character
+          </legend>
+          <!--
+          this form adds a mini drop down menu that gives you the choice between multiple thing
+        -->
+          <form name="marvel-select-form" id="marvel-select-form" method="get">
+            <select name="characters" id="characters">
+              <optgroup label="Avengers">
+                <option value="ironman">Ironman</option>
+                <option value="captian-america">Captian America</option>
+                <option value="thor">Thor</option>
+                <option value="black-widow">Black Widow</option>
+                <option value="hulk">Hulk</option>
+                <option value="hawkeye">Hawkeye</option>
+              </optgroup>
+              <optgroup label="deffenders">
+                <option value="ironfist">iron Fist</option>
+                <option value="lukecage">Luke Cage</option>
+                <option value="jessicajones">Jessica Jones</option>
+                <option value="daredevil">Dare Devil</option>
+              </optgroup>
+              <optgroup label="Alpha Flight">
+                <option value="guardian">guardian</option>
+                <option value="snowbird">Snow Bird</option>
+                <option value="northstar">North Star</option>
+                <option value="Sasquatch">Sasquatch</option>
+              </optgroup>
+              <optgroup label="Fantastic Four">
+                <option value="Mrfantastic">Mr Fantastic</option>
+                <option value="invisablewoman">Invisible Woman</option>
+                <option value="thething">The Thing</option>
+                <option value="humantorch">Human Torch</option>
+              </optgroup>
+              <optgroup label="Thunder Bolts (MCU Version)">
+                <option value="yelena">Yelena Belova</option>
+                <option value="redguardian">Red Guardian</option>
+                <option value="ghost">Ghost</option>
+                <option value="wintersolider">Winter Solider</option>
+                <option value="taskmaster">Taskmaster</option>
+                <option value="USagent">US Agent</option>
+              </optgroup>
+              <optgroup label="X-Men">
+                <option value="professorX">Professer X</option>
+                <option value="cyclops">Cyclops</option>
+                <option value="jeangrey">Jean Grey</option>
+                <option value="beast">Beast</option>
+                <option value="wolverine">Wolverine</option>
+                <option value="iceman">Iceman</option>
+                <option value="storm">Storm</option>
+                <option value="rogue">Rogue</option>
+                <option value="colossus">Colossus</option>
+                <option value="kitty pryde">Kitty Pryde</option>
+                <option value="gambit">Gambit</option>
+                <option value="megneto">Megneto</option>
+                <option value="raven">Raven</option>
+              </optgroup>
+              <optgroup label="Xforce">
+                <option value="deadpool">Deadpool</option>
+                <option value="domino">Domino</option>
+                <option value="cable">Cable</option>
+                <option value="Moonstar">Moonstar</option>
+                <option value="siryn">Siryn</option>
+                <option value="hopesummers">Hope Summers</option>
+              </optgroup>
+              <optgroup label="Sinister 6">
+                <option value="doc ock">Doctor Octopus</option>
+                <option value="vulture">Vulture</option>
+                <option value="kraven">Kraven</option>
+                <option value="mysterio">Mysterio</option>
+                <option value="electro">Electro</option>
+                <option value="sandman">Sandman</option>
+              </optgroup>
+              <optgroup label="West Coast Avengers">
+                <option value="Jeff">Jeffy The Land Shark</option>
+                <option value="mockingbird">Mockingbird</option>
+                <option value="wonerman">Wonder Man</option>
+                <option value="tigra">Tigra</option>
+                <option value="kate">Kate Bishop</option>
+              </optgroup>
+            </select>
+          </form>
+          <!--
+       the textarea form tag gives a area where you can type your own text into
+    -->
+          <form>
+            <br />
+            <br />
+            <textarea id="Why" name="why" rows="5" cols="33>"></textarea>
+            <br />
+          </form>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend style="font-family: Georgia, serif">
+            Choose Which Civil War Team You Believe Was Right:
+          </legend>
+          <!--
+      this form gives you the option between 3 diffrent answers
+    -->
+          <form>
+            <input
+              type="radio"
+              id="ironman"
+              name="civil-war-team"
+              value="ironman"
+            />
+            <label for="ironman">Ironman</label>
+            <br />
+            <input
+              type="radio"
+              id="captian america"
+              name="civil-war-team"
+              value="captian america"
+            />
+            <label for="captian america">Captian America</label>
+            <br />
+            <input
+              type="radio"
+              id="government"
+              name="civil-war-team"
+              value="government"
+            />
+            <label for="government">
+              The Government Should Not Have Put Them In This Situation
+            </label>
+            <br />
+          </form>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend style="font-family: Georgia, serif">
+            Please enter anything you think i should add
+          </legend>
+          <form>
+            <br />
+            <br />
+            <textarea id="story" name="story" rows="5" cols="33>"></textarea>
+            <br />
+          </form>
+        </fieldset>
+        <br />
+        <!--
+    adds a submit button to submit the input from the previous forms
+  -->
+        <form>
+          <br />
+          <input type="submit" />
+          <br />
+        </form>
+      </main>
+    </section>
+    <!--
+     moves all objects in the footer tag to the bottom of the web page
+    -->
+    <footer>
+      <p>
+        this is a website created for my software dev class. this website is
+        about marvel
+      </p>
+      <h2>&copy; Brady</h2>
+    </footer>
+  </body>
+</html>
